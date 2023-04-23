@@ -251,7 +251,7 @@ class MidiFile(mido.MidiFile):
 
 
 if __name__ == "__main__":
-    mid = MidiFile("test_file/1.mid")
+    mid = MidiFile("./test.mid")
 
     # get the list of all events
     # events = mid.get_events()

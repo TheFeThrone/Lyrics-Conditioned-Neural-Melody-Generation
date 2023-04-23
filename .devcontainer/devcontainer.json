@@ -7,12 +7,16 @@
 
 	"runArgs": [
 		"--gpus",
-		"all"
+		"all",
+		"-e", 
+		"DISPLAY=host.docker.internal:0", 
+		"-v", 
+		"/tmp/.X11-unix:/tmp/.X11-unix"
 	],
 
-	"postCreateCommand": "apt update || apt install python2.7 wget -y",
+	"postCreateCommand": "apt update || apt install python2.7 wget -y && apt-get install python-tk -y",
     "postStartCommand": "wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python2.7 get-pip.py && rm get-pip.py",
-	"postAttachCommand": "pip2.7 install -r requirements.txt",
+	"postAttachCommand": "pip2.7 install -r requirements.txt ",
 	"customizations": {
 		"vscode": {
 			"extensions": [

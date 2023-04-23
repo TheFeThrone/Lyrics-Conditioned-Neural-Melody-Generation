@@ -10,3 +10,5 @@ py_midi
 jupyter
 notebook
 pyphen
+tk
+mido

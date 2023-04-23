@@ -15,7 +15,7 @@ def text_to_syllables(text):
     return result
 
 # Example usage:
-lyrics = "today im going to show you how to make music out of lyrics did you know that the background music was done by this artificial intelligence"
+lyrics = "this is a melody created by an artificial intelligence that is meant to help to show what this is all about"
 result = text_to_syllables(lyrics)
 
 os.system("clear")
