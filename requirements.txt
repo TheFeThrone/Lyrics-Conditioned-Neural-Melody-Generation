@@ -1,0 +1,11 @@
+numpy<=1.16.1
+pandas
+grpcio==1.20
+gensim
+pretty_midi
+py_midi
+tensorflow-gpu==1.14.0
+jupyter
+matplotlib
+scikit-learn
+notebook
