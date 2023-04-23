@@ -12,7 +12,7 @@
 
 	"postCreateCommand": "apt update || apt install python2.7 wget -y",
     "postStartCommand": "wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python2.7 get-pip.py && rm get-pip.py",
-	"postAttachCommand": "pip2.7 install -r big_requirements.txt $$ pip2.7 install -r requirements.txt",
+	"postAttachCommand": "pip2.7 install -r requirements.txt",
 	"customizations": {
 		"vscode": {
 			"extensions": [
